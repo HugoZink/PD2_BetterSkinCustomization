@@ -1,0 +1,32 @@
+{
+	"name" : "Better Skin Customization",
+	"description" : "Allows you to prevent custom weapon colors or skins from overwriting specific weapon parts.",
+	"author" : "Rokk",
+	"contact" : "Rokk#8740",
+	"version" : "1.0",
+	"blt_version" : 2,
+	"hooks" : [
+		{ "hook_id": "lib/managers/blackmarketmanager", "script_path": "lua/blackmarketmanager.lua" },
+
+		{ "hook_id": "lib/units/weapons/cosmeticsweaponbase", "script_path": "lua/cosmeticsweaponbase.lua" }
+	],
+	"keybinds": [
+		{
+			"keybind_id": "bsc_openmenu",
+			"name": "Open BSC Menu",
+			"description": "Opens the Better Skin Customization menu, allowing you to exclude a weaponmod from skins/weapon colors. Preview or modify a weapon to use.",
+			"script_path": "keybinds/openmenu.lua",
+			"run_in_menu": true,
+			"run_in_game": false,
+			"localized": false
+		}
+	],
+	"updates" : [
+		{
+			"identifier" : "betterskincustomization_rokk",
+			"host" : {
+				"meta" : "https://github.com/HugoZink/PD2_BetterSkinCustomization/releases/download/pd2mod_release/meta.json"
+			}
+		}
+	]
+}
